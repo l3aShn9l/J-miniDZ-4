@@ -6,9 +6,13 @@ import java.util.Scanner;
 class IterableFile implements Iterable<String>
 {
     BufferedReader _reader;
-    public IterableFile(BufferedReader reader) { _reader = reader; };
+    public IterableFile(BufferedReader reader) {
+    _reader = reader;
+    };
     @Override
-    public Iterator<String> iterator() { return new FileIterator(_reader); }
+    public Iterator<String> iterator() {
+    return new FileIterator(_reader); 
+    }
 }
 class FileIterator implements Iterator<String>
 {
